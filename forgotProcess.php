@@ -27,12 +27,12 @@ if($num == 1){
             $mail->IsSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'yasithdil.abey@gmail.com';
+            $mail->Username = '';
             $mail->Password = 'czofbktsajxfnohk';
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
-            $mail->setFrom('yasithdil.abey@gmail.com', 'Reset Password');
-            $mail->addReplyTo('yasithdil.abey@gmail.com', 'Reset Password');
+            $mail->setFrom('', 'Reset Password');
+            $mail->addReplyTo('', 'Reset Password');
             $mail->addAddress($email);
             $mail->isHTML(true);
             $mail->Subject = 'N- Market progot password';
